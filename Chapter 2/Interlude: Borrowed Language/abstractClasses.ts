@@ -16,3 +16,14 @@ abstract class Discount {
     }
 }
 
+/*
+    TypeScript reports errors when you forget to implement isValid, and you're not allowed to create
+    an object with an abstract class. 
+
+    But again, only in TypeScript.
+
+    Abstract classes are emitted to JavaScript, but their semantics are similar to regular classes.
+
+    Only now, they're missing entire implementation details. This can cause weird errors at runtime
+    that can easily avoid.
+ */
